@@ -181,4 +181,28 @@ nav{
 display:none;
 }
 
+}.social-footer{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    padding:40px 0;
+}
+
+.social-icon{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    background:#111;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    font-size:28px;
+    transition:.3s;
+}
+
+.social-icon:hover{
+    background:#0077ff;
+    transform:scale(1.1);
 }
