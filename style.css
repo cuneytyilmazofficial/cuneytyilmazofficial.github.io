@@ -127,3 +127,23 @@ img{
     font-size:12px;
     border-top:1px solid rgba(255,255,255,0.15);
 }
+.navbar{
+    width:100%;
+    padding:20px 0;
+    text-align:center;
+    background:rgba(0,0,0,0.20);
+    backdrop-filter:blur(8px);
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    margin:0 20px;
+    font-size:18px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.navbar a:hover{
+    color:#ffd54f;
+}
