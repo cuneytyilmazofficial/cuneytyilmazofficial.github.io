@@ -1,68 +1,89 @@
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+body{
+    margin:0;
+    padding:0;
+    background:linear-gradient(135deg,#08121f,#132b45);
+    color:white;
+    font-family:Arial,Helvetica,sans-serif;
+}
 
-<title>Cüneyt Yılmaz | Girişimci Mentör</title>
+.container{
+    max-width:800px;
+    margin:50px auto;
+    padding:40px;
+    text-align:center;
+    background:rgba(255,255,255,.05);
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.4);
+}
 
-<link rel="stylesheet" href="style.css">
+.profile{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid #D4AF37;
+    box-shadow:0 0 25px rgba(212,175,55,.6);
+    margin-bottom:25px;
+}
 
-</head>
+h1{
+    color:#D4AF37;
+    font-size:48px;
+    margin-bottom:10px;
+}
 
-<body>
+h2{
+    color:white;
+    font-size:28px;
+    margin-bottom:25px;
+    font-weight:400;
+}
 
-<header>
-<nav class="navbar">
+p{
+    font-size:20px;
+    line-height:1.8;
+    color:#ddd;
+}
 
-<div class="logo">
-CY
-</div>
+a{
+    display:inline-block;
+    margin:12px;
+    padding:14px 32px;
+    text-decoration:none;
+    background:#D4AF37;
+    color:#08121f;
+    border-radius:40px;
+    font-weight:bold;
+    transition:.3s;
+}
 
-<ul>
-<li><a href="#anasayfa">Ana Sayfa</a></li>
-<li><a href="#hakkimda">Hakkımda</a></li>
-<li><a href="#iletisim">İletişim</a></li>
-</ul>
+a:hover{
+    background:white;
+    transform:translateY(-3px);
+}
 
-</nav>
-</header>
+@media(max-width:768px){
 
-<section id="anasayfa" class="hero">
+.container{
+    margin:20px;
+    padding:25px;
+}
 
-<div class="hero-text">
+.profile{
+    width:170px;
+    height:170px;
+}
 
-<h1>CÜNEYT YILMAZ</h1>
+h1{
+    font-size:34px;
+}
 
-<h2>Girişimci Mentör</h2>
+h2{
+    font-size:22px;
+}
 
-<p>
+p{
+    font-size:17px;
+}
 
-Önce Değer, Sonra Başarı.
-
-</p>
-
-<p>
-
-Girişimcilik; insanlara değer üretme, güven inşa etme ve sürdürülebilir başarı yolculuğudur.
-
-</p>
-
-<a href="https://wa.me/905445606038" class="btn">
-
-Benimle İletişime Geç
-
-</a>
-
-</div>
-
-<div class="hero-image">
-
-<img src="profil.jpg" alt="Cüneyt Yılmaz">
-
-</div>
-
-</section>
-
-</body>
-</html>
+}
