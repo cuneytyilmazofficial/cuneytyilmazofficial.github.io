@@ -1,1 +1,235 @@
-body{margin:0;padding:0;background:linear-gradient(135deg,#eef5ff,#f8fbff,#fff);font-family:Arial,sans-serif;color:#24324a}.navbar{position:sticky;top:0;display:flex;justify-content:center;gap:50px;background:#fff;padding:18px;box-shadow:0 4px 15px rgba(0,0,0,.08)}.navbar a{text-decoration:none;color:#1b3558;font-weight:bold}.navbar a:hover{color:#d4af37}.container{max-width:1000px;margin:40px auto;background:#fff;padding:45px;border-radius:28px;box-shadow:0 15px 45px rgba(0,0,0,.12);text-align:center}.profile{width:220px;height:220px;border-radius:50%;object-fit:cover;border:6px solid #d4af37}.teamlogo{width:140px;display:block;margin:20px auto}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px;margin:40px 0}.card{background:#f8fbff;border:1px solid #d9e7ff;border-radius:20px;padding:25px;box-shadow:0 10px 25px rgba(0,0,0,.08)}.card h3{color:#d4af37}.card p{color:#666}.button{display:inline-block;margin:10px;padding:15px 28px;border-radius:35px;text-decoration:none;color:#222;font-weight:bold;background:linear-gradient(135deg,#ffd54f,#f4b400)}.footer{margin-top:40px;padding-top:20px;border-top:1px solid #e8e8e8;color:#777}
+/* ======================================
+   CÜNEYT YILMAZ | STYLE.CSS
+====================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:linear-gradient(135deg,#eef5ff,#ffffff,#f7fbff);
+    color:#24324a;
+}
+
+.navbar{
+    position:sticky;
+    top:0;
+    width:100%;
+    background:#ffffff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+    z-index:999;
+}
+
+.navbar a{
+    text-decoration:none;
+    color:#17365d;
+    margin-left:30px;
+    font-size:17px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.navbar a:hover{
+    color:#d4af37;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:60px auto;
+}
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+    min-height:80vh;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h1{
+    font-size:64px;
+    color:#d4af37;
+    margin-bottom:15px;
+}
+
+.hero-text h2{
+    color:#17365d;
+    margin-bottom:25px;
+}
+
+.hero-text p{
+    font-size:18px;
+    line-height:1.8;
+    color:#555;
+}
+
+.hero-image{
+    flex:1;
+    text-align:center;
+    position:relative;
+}
+
+.profile{
+    width:360px;
+    border-radius:25px;
+    box-shadow:0 20px 45px rgba(0,0,0,.18);
+}
+
+.teamlogo{
+    position:absolute;
+    top:-20px;
+    right:30px;
+    width:90px;
+    border-radius:18px;
+    animation:logoFloat 3s ease-in-out infinite;
+}
+
+@keyframes logoFloat{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-10px);
+    }
+
+}/* ======================================
+   UZMANLIK KARTLARI
+====================================== */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:25px;
+    margin-top:60px;
+}
+
+.card{
+    background:#ffffff;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.35s;
+    border:1px solid #e7edf7;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    border-color:#d4af37;
+    box-shadow:0 18px 40px rgba(212,175,55,.25);
+}
+
+.card h3{
+    color:#d4af37;
+    font-size:24px;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#666;
+    line-height:1.7;
+}
+
+/* ======================================
+   BUTONLAR
+====================================== */
+
+.buttons{
+    margin-top:45px;
+}
+
+.button{
+    display:inline-block;
+    margin:10px;
+    padding:16px 34px;
+    border-radius:40px;
+    text-decoration:none;
+    background:linear-gradient(135deg,#FFD54F,#F4B400);
+    color:#222;
+    font-weight:bold;
+    transition:.3s;
+    box-shadow:0 10px 25px rgba(244,180,0,.30);
+}
+
+.button:hover{
+    transform:translateY(-5px);
+    box-shadow:0 18px 35px rgba(244,180,0,.45);
+}
+
+/* ======================================
+   FOOTER
+====================================== */
+
+.footer{
+    margin-top:80px;
+    padding:30px;
+    text-align:center;
+    color:#777;
+    border-top:1px solid #ececec;
+}
+
+/* ======================================
+   MOBİL UYUMLULUK
+====================================== */
+
+@media(max-width:900px){
+
+    .hero{
+        flex-direction:column-reverse;
+        text-align:center;
+        gap:40px;
+    }
+
+    .hero-text h1{
+        font-size:42px;
+    }
+
+    .hero-text h2{
+        font-size:28px;
+    }
+
+    .profile{
+        width:260px;
+    }
+
+    .teamlogo{
+        width:70px;
+        top:-10px;
+        right:20px;
+    }
+
+    .navbar{
+        flex-direction:column;
+        gap:15px;
+        padding:20px;
+    }
+
+    .navbar a{
+        margin:0 10px;
+    }
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+    .button{
+        display:block;
+        width:100%;
+        margin:12px 0;
+        text-align:center;
+    }
+
+}
