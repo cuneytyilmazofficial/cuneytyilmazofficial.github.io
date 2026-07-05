@@ -694,7 +694,9 @@ color:#c8a13a;
 footer p{
 font-size:16px;
 line-height:1.9;
-}.photo-box{
+}
+
+.photo-box{
     position:relative;
     overflow:hidden;
     border-radius:30px;
