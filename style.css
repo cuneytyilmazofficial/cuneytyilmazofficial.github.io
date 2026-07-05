@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Cüneyt Yılmaz | Girişimci Mentör</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+<nav class="navbar">
+
+<div class="logo">
+CY
+</div>
+
+<ul>
+<li><a href="#anasayfa">Ana Sayfa</a></li>
+<li><a href="#hakkimda">Hakkımda</a></li>
+<li><a href="#iletisim">İletişim</a></li>
+</ul>
+
+</nav>
+</header>
+
+<section id="anasayfa" class="hero">
+
+<div class="hero-text">
+
+<h1>CÜNEYT YILMAZ</h1>
+
+<h2>Girişimci Mentör</h2>
+
+<p>
+
+Önce Değer, Sonra Başarı.
+
+</p>
+
+<p>
+
+Girişimcilik; insanlara değer üretme, güven inşa etme ve sürdürülebilir başarı yolculuğudur.
+
+</p>
+
+<a href="https://wa.me/905445606038" class="btn">
+
+Benimle İletişime Geç
+
+</a>
+
+</div>
+
+<div class="hero-image">
+
+<img src="profil.jpg" alt="Cüneyt Yılmaz">
+
+</div>
+
+</section>
+
+</body>
+</html>
