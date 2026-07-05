@@ -622,4 +622,12 @@ right:18px;
 bottom:18px;
 }
 
+}.logo-slogan{
+    text-align:center;
+    margin-top:10px;
+    font-size:14px;
+    font-weight:600;
+    color:#c8a13a;
+    letter-spacing:1px;
+    font-style:italic;
 }
