@@ -220,12 +220,52 @@ display:none;
     background:#111;
     color:#fff;
     text-align:center;
-    padding:50px 20px;
+    padding:70px 20px;
 }
 
 #contact h2{
-    margin-bottom:25px;
-    font-size:32px;
+    font-size:38px;
+    margin-bottom:30px;
+}
+
+.social-links{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-bottom:35px;
+}
+
+.social-links a{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:28px;
+    color:#fff;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.social-links a:hover{
+    transform:scale(1.15);
+}
+
+.social-links a:nth-child(1){
+    background:#25D366;
+}
+
+.social-links a:nth-child(2){
+    background:linear-gradient(45deg,#833AB4,#FD1D1D,#FCAF45);
+}
+
+.social-links a:nth-child(3){
+    background:#229ED9;
+}
+
+.social-links a:nth-child(4){
+    background:#1877F2;
 }
 
 #contact p{
@@ -234,11 +274,10 @@ display:none;
 }
 
 #contact a{
-    color:#25D366;
+    color:#fff;
     text-decoration:none;
-    font-weight:bold;
 }
 
 #contact a:hover{
-    text-decoration:underline;
+    color:#25D366;
 }
