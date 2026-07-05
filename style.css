@@ -1,57 +1,52 @@
-/* ======================================
-   CÜNEYT YILMAZ | STYLE.CSS
-====================================== */
-
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
 }
 
 body{
-    font-family:Arial, Helvetica, sans-serif;
-    background:linear-gradient(135deg,#eef5ff,#ffffff,#f7fbff);
-    color:#24324a;
+    background:#f5f7fb;
+    color:#222;
 }
 
-.navbar{
-    position:sticky;
-    top:0;
+header{
     width:100%;
-    background:#ffffff;
+    background:#fff;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:18px 8%;
-    box-shadow:0 4px 15px rgba(0,0,0,.08);
-    z-index:999;
+    padding:20px 8%;
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
+    position:sticky;
+    top:0;
+    z-index:1000;
 }
 
-.navbar a{
+.logo img{
+    width:70px;
+}
+
+nav a{
     text-decoration:none;
-    color:#17365d;
-    margin-left:30px;
-    font-size:17px;
-    font-weight:bold;
+    color:#222;
+    margin-left:35px;
+    font-weight:600;
     transition:.3s;
 }
 
-.navbar a:hover{
+nav a:hover{
     color:#d4af37;
-}
-
-.container{
-    width:90%;
-    max-width:1200px;
-    margin:60px auto;
 }
 
 .hero{
     display:flex;
     justify-content:space-between;
     align-items:center;
+    max-width:1200px;
+    margin:70px auto;
+    padding:0 30px;
     gap:60px;
-    min-height:80vh;
 }
 
 .hero-text{
@@ -59,83 +54,87 @@ body{
 }
 
 .hero-text h1{
-    font-size:64px;
-    color:#d4af37;
-    margin-bottom:15px;
+    font-size:60px;
+    margin-bottom:10px;
 }
 
 .hero-text h2{
-    color:#17365d;
+    color:#d4af37;
     margin-bottom:25px;
+    font-size:30px;
 }
 
 .hero-text p{
     font-size:18px;
     line-height:1.8;
-    color:#555;
+    color:#666;
+    margin-bottom:35px;
+}
+
+.btn{
+    display:inline-block;
+    background:#d4af37;
+    color:#fff;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:40px;
+    font-weight:bold;
 }
 
 .hero-image{
     flex:1;
-    text-align:center;
-    position:relative;
+    text-align:right;
 }
 
-.profile{
-    width:360px;
+.hero-image img{
+    width:420px;
     border-radius:25px;
-    box-shadow:0 20px 45px rgba(0,0,0,.18);
+    box-shadow:0 20px 40px rgba(0,0,0,.18);
 }
 
-.teamlogo{
-    position:absolute;
-    top:-20px;
-    right:30px;
-    width:90px;
-    border-radius:18px;
-    animation:logoFloat 3s ease-in-out infinite;
+section{
+    max-width:1200px;
+    margin:auto;
+    padding:70px 30px;
 }
 
-@keyframes logoFloat{
+section h2{
+    text-align:center;
+    font-size:38px;
+    margin-bottom:40px;
+}
 
-    0%,100%{
-        transform:translateY(0);
-    }
-
-    50%{
-        transform:translateY(-10px);
-    }
-
-}/* ======================================
-   UZMANLIK KARTLARI
-====================================== */
+#about p{
+    text-align:center;
+    font-size:18px;
+    color:#666;
+    line-height:1.9;
+    max-width:900px;
+    margin:auto;
+}
 
 .cards{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    grid-template-columns:repeat(4,1fr);
     gap:25px;
-    margin-top:60px;
 }
 
 .card{
-    background:#ffffff;
-    padding:30px;
+    background:white;
+    padding:35px;
     border-radius:20px;
+    text-align:center;
     box-shadow:0 10px 30px rgba(0,0,0,.08);
-    transition:.35s;
-    border:1px solid #e7edf7;
+    transition:.3s;
 }
 
 .card:hover{
-    transform:translateY(-10px);
-    border-color:#d4af37;
-    box-shadow:0 18px 40px rgba(212,175,55,.25);
+    transform:translateY(-8px);
 }
 
 .card h3{
-    color:#d4af37;
-    font-size:24px;
     margin-bottom:15px;
+    color:#d4af37;
 }
 
 .card p{
@@ -143,93 +142,43 @@ body{
     line-height:1.7;
 }
 
-/* ======================================
-   BUTONLAR
-====================================== */
-
-.buttons{
-    margin-top:45px;
-}
-
-.button{
-    display:inline-block;
-    margin:10px;
-    padding:16px 34px;
-    border-radius:40px;
-    text-decoration:none;
-    background:linear-gradient(135deg,#FFD54F,#F4B400);
-    color:#222;
-    font-weight:bold;
-    transition:.3s;
-    box-shadow:0 10px 25px rgba(244,180,0,.30);
-}
-
-.button:hover{
-    transform:translateY(-5px);
-    box-shadow:0 18px 35px rgba(244,180,0,.45);
-}
-
-/* ======================================
-   FOOTER
-====================================== */
-
-.footer{
-    margin-top:80px;
-    padding:30px;
+footer{
+    background:#111827;
+    color:white;
     text-align:center;
-    color:#777;
-    border-top:1px solid #ececec;
+    padding:50px 20px;
+    margin-top:60px;
 }
 
-/* ======================================
-   MOBİL UYUMLULUK
-====================================== */
+footer h3{
+    margin-bottom:15px;
+}
+
+footer p{
+    margin:8px 0;
+}
 
 @media(max-width:900px){
 
-    .hero{
-        flex-direction:column-reverse;
-        text-align:center;
-        gap:40px;
-    }
+.hero{
+flex-direction:column-reverse;
+text-align:center;
+}
 
-    .hero-text h1{
-        font-size:42px;
-    }
+.hero-image img{
+width:300px;
+}
 
-    .hero-text h2{
-        font-size:28px;
-    }
+.cards{
+grid-template-columns:1fr;
+}
 
-    .profile{
-        width:260px;
-    }
+.hero-text h1{
+font-size:42px;
+}
 
-    .teamlogo{
-        width:70px;
-        top:-10px;
-        right:20px;
-    }
-
-    .navbar{
-        flex-direction:column;
-        gap:15px;
-        padding:20px;
-    }
-
-    .navbar a{
-        margin:0 10px;
-    }
-
-    .cards{
-        grid-template-columns:1fr;
-    }
-
-    .button{
-        display:block;
-        width:100%;
-        margin:12px 0;
-        text-align:center;
-    }
+nav{
+display:none;
+}
 
 }
