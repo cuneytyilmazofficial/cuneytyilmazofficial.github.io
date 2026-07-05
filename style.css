@@ -102,6 +102,7 @@ img{
 .teamlogo{
     display:block;
     width:180px;
+    border-radius:20px;
     margin:20px auto;
 }
 .button{
