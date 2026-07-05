@@ -135,15 +135,25 @@ img{
     backdrop-filter:blur(8px);
 }
 
+.navbar{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    padding:25px 0;
+    background:transparent;
+}
+
 .navbar a{
-    color:white;
+    color:#ffffff;
     text-decoration:none;
-    margin:0 20px;
-    font-size:18px;
-    font-weight:bold;
+    font-size:20px;
+    font-weight:600;
+    padding:0;
+    background:none;
+    border-radius:0;
     transition:0.3s;
 }
 
 .navbar a:hover{
-    color:#ffd54f;
+    color:#FFD700;
 }
