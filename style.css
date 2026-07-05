@@ -61,10 +61,37 @@ body{
 }
 
 .teamlogo{
-    display:block;
-    width:140px;
-    margin:25px auto;
-    border-radius:20px;
+    position:fixed;
+    top:20px;
+    right:20px;
+    width:90px;
+    border-radius:15px;
+    z-index:1000;
+    animation:logoGiris 1.2s ease, nefes 3s ease-in-out infinite;
+}
+
+@keyframes logoGiris{
+    0%{
+        opacity:0;
+        transform:translateY(-40px) scale(0.5) rotate(-15deg);
+    }
+    60%{
+        opacity:1;
+        transform:translateY(10px) scale(1.1);
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0) scale(1);
+    }
+}
+
+@keyframes nefes{
+    0%,100%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(1.05);
+    }
 }
 
 h1{
