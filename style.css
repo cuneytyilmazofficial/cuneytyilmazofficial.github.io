@@ -509,3 +509,76 @@ bottom:18px;
 }
 
 }
+/* ===========================
+   İLETİŞİM FORMU
+=========================== */
+
+.contact-form{
+    background:#f8f9fb;
+    padding:100px 20px;
+}
+
+.contact-form .container{
+    max-width:850px;
+    margin:auto;
+}
+
+.contact-form h2{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:15px;
+    color:#222;
+}
+
+.contact-form p{
+    text-align:center;
+    color:#666;
+    margin-bottom:45px;
+    line-height:1.8;
+}
+
+.contact-form form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:18px 22px;
+    border:1px solid #ddd;
+    border-radius:14px;
+    font-size:17px;
+    outline:none;
+    transition:.3s;
+    background:#fff;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+    border-color:#c79a2b;
+    box-shadow:0 0 10px rgba(199,154,43,.25);
+}
+
+.contact-form textarea{
+    resize:vertical;
+    min-height:180px;
+}
+
+.contact-form button{
+    background:#c79a2b;
+    color:#fff;
+    border:none;
+    padding:18px;
+    border-radius:14px;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.contact-form button:hover{
+    background:#ad8320;
+    transform:translateY(-2px);
+}
