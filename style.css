@@ -219,11 +219,12 @@ margin-bottom:20px;
 }
 
 .section-title p{
-max-width:900px;
-margin:auto;
-font-size:18px;
-line-height:1.9;
-color:#6b7280;
+    max-width:950px;
+    margin:auto;
+    font-size:18px;
+    line-height:2;
+    color:#555;
+    text-align:justify;
 }
 
 /* İSTATİSTİKLER */
@@ -658,4 +659,26 @@ bottom:18px;
     margin-top:-30px;
     margin-bottom:40px;
     line-height:1.8;
+}.about p strong{
+    color:#c8a13a;
+    font-weight:700;
+}
+
+.about-quote{
+    max-width:850px;
+    margin:0 auto 40px;
+    text-align:center;
+    font-size:22px;
+    font-style:italic;
+    color:#c8a13a;
+    font-weight:600;
+    line-height:1.8;
+}
+
+.about p{
+    max-width:950px;
+    margin:auto;
+    text-align:justify;
+    line-height:2;
+    font-size:18px;
 }
