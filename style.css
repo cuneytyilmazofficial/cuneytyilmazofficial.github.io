@@ -158,3 +158,36 @@ img{
 .navbar a:hover{
     color:#FFD700;
 }
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    margin:40px 0;
+}
+
+.card{
+    width:230px;
+    padding:20px;
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,215,0,0.25);
+    border-radius:20px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    border-color:#FFD700;
+}
+
+.card h3{
+    color:#FFD700;
+    margin-bottom:12px;
+}
+
+.card p{
+    color:#ddd;
+    font-size:15px;
+    line-height:1.6;
+}
