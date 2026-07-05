@@ -139,12 +139,10 @@ img{
     display:flex;
     justify-content:center;
     gap:70px;
-    padding:10px 0;
+    padding:5px 0;
     margin-bottom:10px;
     background:transparent;
 }
-}
-
 .navbar a{
     color:#ffffff;
     text-decoration:none;
