@@ -1,19 +1,25 @@
 body{
     margin:0;
     padding:0;
-    background:linear-gradient(135deg,#edf4ff,#d8e9ff,#f8fbff);
-    color:#222;
     font-family:Arial,Helvetica,sans-serif;
+
+    background:linear-gradient(135deg,#eef6ff,#f8fbff,#ffffff);
+
+    color:#1e293b;
 }
 
 .container{
-    max-width:800px;
+    max-width:950px;
     margin:50px auto;
-    padding:40px;
-    text-align:center;
+    padding:50px;
+
     background:#ffffff;
+
     border-radius:30px;
-    box-shadow:0 20px 50px rgba(0,0,0,.12);
+
+    box-shadow:0 20px 60px rgba(0,0,0,.12);
+
+    text-align:center;
 }
 
 .profile{
@@ -27,22 +33,22 @@ body{
 }
 
 h1{
-    color:#444;
-    font-size:48px;
+    font-size:60px;
+    color:#d4af37;
     margin-bottom:10px;
 }
 
 h2{
-    color:555;
+    color:17365d;
     font-size:28px;
     margin-bottom:25px;
     font-weight:400;
 }
 
 p{
-    font-size:20px;
-    line-height:1.8;
     color:#555;
+    line-height:1.9;
+    font-size:18px;
 }
 
 a{
@@ -106,14 +112,15 @@ img{
     margin:20px auto;
 }
 .button{
-    display:inline-block;
-    margin:10px;
-    padding:12px 24px;
-    border-radius:30px;
-    text-decoration:none;
-    font-weight:bold;
-    transition:0.3s;
-    box-shadow:0 8px 20px rgba(255,193,7,0.35);
+
+background:linear-gradient(135deg,#FFD54F,#F4B400);
+
+color:#1b1b1b;
+
+font-weight:bold;
+
+box-shadow:0 10px 25px rgba(255,193,7,.35);
+
 }
 
 .button:hover{
@@ -131,8 +138,11 @@ img{
     display:flex;
     justify-content:center;
     gap:70px;
-    padding:20px 0 10px;
-    background:transparent;
+    padding:25px;
+
+    background:white;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
 }
 
 .navbar{
@@ -145,29 +155,30 @@ img{
     background:transparent;
 }
 .navbar a{
-    color:#ffffff;
+    color:#17365d;
+    font-size:21px;
+    font-weight:bold;
     text-decoration:none;
-    font-size:20px;
-    font-weight:600;
-    padding:0;
-    background:none;
-    border-radius:0;
-    transition:0.3s;
 }
 
 .navbar a:hover{
-    color:#FFD700;
+    color:#d4af37;
 }
 .card{
-    padding:25px;
-    background:rgba(255,255,255,0.06);
-    border:1px solid rgba(255,215,0,.25);
-    border-radius:20px;
-    text-align:center;
-    transition:.3s;
-}
-}
 
+background:#f8fbff;
+
+border:1px solid #d9e7ff;
+
+border-radius:25px;
+
+padding:30px;
+
+transition:.35s;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
 .card{
     width:230px;
     padding:20px;
@@ -179,8 +190,13 @@ img{
 }
 
 .card:hover{
-    transform:translateY(-8px);
-    border-color:#FFD700;
+
+transform:translateY(-8px);
+
+border-color:#d4af37;
+
+box-shadow:0 15px 35px rgba(212,175,55,.25);
+
 }
 
 .card h3{
