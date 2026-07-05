@@ -1,6 +1,6 @@
-/* =====================================================
-   CÜNEYT YILMAZ - PREMIUM WEBSITE
-===================================================== */
+/* ===================================================
+   CÜNEYT YILMAZ | PREMIUM WEBSITE
+=================================================== */
 
 *{
 margin:0;
@@ -12,7 +12,7 @@ font-family:'Poppins',sans-serif;
 
 body{
 background:#f4f7fb;
-color:#222;
+color:#1f2937;
 overflow-x:hidden;
 }
 
@@ -22,16 +22,16 @@ max-width:1280px;
 margin:auto;
 }
 
-/* ================= HEADER ================= */
+/* HEADER */
 
 header{
 position:fixed;
 top:0;
 left:0;
 width:100%;
-background:rgba(255,255,255,.90);
+background:rgba(255,255,255,.95);
 backdrop-filter:blur(18px);
-box-shadow:0 5px 20px rgba(0,0,0,.08);
+box-shadow:0 5px 25px rgba(0,0,0,.08);
 z-index:999;
 }
 
@@ -43,12 +43,12 @@ height:90px;
 }
 
 .logo img{
-width:75px;
+width:72px;
 transition:.4s;
 }
 
 .logo img:hover{
-transform:rotate(-6deg) scale(1.08);
+transform:scale(1.08);
 }
 
 nav{
@@ -58,26 +58,25 @@ gap:35px;
 
 nav a{
 text-decoration:none;
-color:#1f2937;
 font-weight:600;
-font-size:16px;
-position:relative;
+color:#111827;
 transition:.3s;
+position:relative;
 }
 
 nav a:hover{
-color:#c9a227;
+color:#c8a13a;
 }
 
 nav a::after{
-content:'';
+content:"";
 position:absolute;
 left:0;
 bottom:-8px;
-width:0%;
+width:0;
 height:3px;
-background:#c9a227;
-transition:.35s;
+background:#c8a13a;
+transition:.3s;
 }
 
 nav a:hover::after{
@@ -85,12 +84,12 @@ width:100%;
 }
 
 .contact-btn{
-background:#c9a227;
-color:white;
-padding:14px 28px;
+background:#c8a13a;
+color:#fff;
+padding:15px 28px;
 border-radius:40px;
-font-weight:600;
 text-decoration:none;
+font-weight:600;
 transition:.3s;
 }
 
@@ -99,36 +98,46 @@ background:#111827;
 transform:translateY(-3px);
 }
 
-/* ================= HERO ================= */
+/* HERO */
 
 .hero{
-padding-top:150px;
-padding-bottom:100px;
+padding:170px 0 120px;
 }
 
 .hero-grid{
 display:grid;
 grid-template-columns:1fr 1fr;
-align-items:center;
 gap:80px;
+align-items:center;
 }
 
-.hero-left h3{
-font-size:18px;
-letter-spacing:3px;
-color:#c9a227;
-margin-bottom:18px;
+.badge{
+display:inline-block;
+background:#111827;
+color:#fff;
+padding:10px 22px;
+border-radius:40px;
+font-size:14px;
+letter-spacing:2px;
+margin-bottom:25px;
 }
 
 .hero-left h1{
-font-size:68px;
+font-size:72px;
 font-weight:800;
-line-height:1.15;
-margin-bottom:20px;
+line-height:1.1;
+margin-bottom:10px;
 }
 
 .hero-left h1 span{
-color:#c9a227;
+color:#c8a13a;
+}
+
+.hero-left h2{
+font-size:30px;
+font-weight:500;
+margin-bottom:30px;
+color:#555;
 }
 
 .hero-left p{
@@ -141,16 +150,17 @@ margin-bottom:40px;
 .hero-buttons{
 display:flex;
 gap:20px;
+flex-wrap:wrap;
 }
 
 .btn-primary{
-background:#c9a227;
+background:#c8a13a;
 color:#fff;
 padding:16px 36px;
-border-radius:40px;
+border-radius:50px;
 text-decoration:none;
 font-weight:600;
-transition:.35s;
+transition:.3s;
 }
 
 .btn-primary:hover{
@@ -159,17 +169,17 @@ transform:translateY(-5px);
 }
 
 .btn-secondary{
-border:2px solid #c9a227;
-color:#c9a227;
+border:2px solid #c8a13a;
+color:#c8a13a;
 padding:16px 36px;
-border-radius:40px;
+border-radius:50px;
 text-decoration:none;
 font-weight:600;
-transition:.35s;
+transition:.3s;
 }
 
 .btn-secondary:hover{
-background:#c9a227;
+background:#c8a13a;
 color:#fff;
 }
 
@@ -181,14 +191,16 @@ text-align:center;
 width:430px;
 max-width:100%;
 border-radius:30px;
-box-shadow:0 25px 70px rgba(0,0,0,.18);
-transition:.5s;
+box-shadow:0 30px 70px rgba(0,0,0,.18);
+transition:.4s;
 }
 
 .hero-right img:hover{
 transform:scale(1.03);
 }
-/* ================= HAKKIMDA ================= */
+/* ===================================================
+   HAKKIMDA
+=================================================== */
 
 .about{
 padding:110px 0;
@@ -208,14 +220,14 @@ margin-bottom:20px;
 }
 
 .section-title p{
-max-width:850px;
+max-width:900px;
 margin:auto;
 font-size:18px;
 line-height:1.9;
-color:#666;
+color:#6b7280;
 }
 
-/* ================= SAYAÇLAR ================= */
+/* İSTATİSTİKLER */
 
 .stats{
 display:grid;
@@ -226,35 +238,36 @@ margin-top:70px;
 
 .stat-card{
 background:#fff;
-padding:45px 20px;
-text-align:center;
+padding:45px 30px;
 border-radius:25px;
-box-shadow:0 20px 40px rgba(0,0,0,.08);
-transition:.4s;
-border:1px solid rgba(0,0,0,.05);
+text-align:center;
+box-shadow:0 20px 50px rgba(0,0,0,.08);
+transition:.35s;
+border:1px solid #ececec;
 }
 
 .stat-card:hover{
 transform:translateY(-12px);
-box-shadow:0 30px 60px rgba(0,0,0,.15);
+box-shadow:0 35px 70px rgba(0,0,0,.15);
 }
 
 .stat-card h3{
-font-size:52px;
-color:#c9a227;
-margin-bottom:12px;
-font-weight:700;
+font-size:56px;
+color:#c8a13a;
+margin-bottom:15px;
 }
 
-.stat-card span{
+.stat-card p{
 font-size:18px;
-color:#666;
+color:#555;
 }
 
-/* ================= HİZMETLER ================= */
+/* ===================================================
+   HİZMETLER
+=================================================== */
 
 .services{
-padding:110px 0;
+padding:120px 0;
 background:#f7f9fc;
 }
 
@@ -270,24 +283,30 @@ background:#fff;
 padding:45px 35px;
 border-radius:25px;
 text-align:center;
-box-shadow:0 20px 45px rgba(0,0,0,.08);
+box-shadow:0 20px 50px rgba(0,0,0,.08);
 transition:.35s;
+border:1px solid #ececec;
 }
 
 .service-card:hover{
 transform:translateY(-12px);
-box-shadow:0 30px 60px rgba(0,0,0,.16);
+box-shadow:0 35px 70px rgba(0,0,0,.16);
 }
 
 .service-card i{
-font-size:55px;
-color:#c9a227;
+font-size:58px;
+color:#c8a13a;
 margin-bottom:25px;
+transition:.3s;
+}
+
+.service-card:hover i{
+transform:scale(1.15);
 }
 
 .service-card h3{
-font-size:26px;
-margin-bottom:15px;
+font-size:28px;
+margin-bottom:18px;
 color:#111827;
 }
 
@@ -297,164 +316,246 @@ line-height:1.8;
 color:#666;
 }
 
-/* ================= HOVER EFEKTLERİ ================= */
+/* ===================================================
+   VİZYON
+=================================================== */
 
-.service-card:hover i{
-transform:scale(1.15);
+.vision{
+padding:120px 0;
+background:#ffffff;
+}
+
+.vision-box{
+max-width:950px;
+margin:auto;
+background:#111827;
+color:#fff;
+padding:60px;
+border-radius:30px;
+text-align:center;
+box-shadow:0 25px 70px rgba(0,0,0,.20);
+}
+
+.vision-box i{
+font-size:60px;
+color:#c8a13a;
+margin-bottom:30px;
+}
+
+.vision-box p{
+font-size:24px;
+line-height:1.8;
+margin-bottom:30px;
+}
+
+.vision-box h4{
+font-size:22px;
+color:#c8a13a;
+letter-spacing:1px;
+}
+/* ===================================================
+   İLETİŞİM
+=================================================== */
+
+.contact{
+padding:120px 0;
+background:#111827;
+color:#fff;
+}
+
+.contact-wrapper{
+display:grid;
+grid-template-columns:1fr 1.2fr;
+gap:60px;
+align-items:start;
+margin-top:60px;
+}
+
+.contact-left{
+background:#182234;
+padding:45px;
+border-radius:25px;
+}
+
+.contact-left h3{
+font-size:34px;
+margin-bottom:20px;
+}
+
+.contact-left p{
+line-height:1.9;
+color:#d1d5db;
+margin-bottom:35px;
+}
+
+.contact-item{
+display:flex;
+align-items:center;
+gap:20px;
+margin-bottom:30px;
+}
+
+.contact-item i{
+width:60px;
+height:60px;
+background:#c8a13a;
+color:#fff;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:50%;
+font-size:24px;
+}
+
+.contact-item h4{
+font-size:18px;
+margin-bottom:5px;
+}
+
+.contact-item span{
+color:#d1d5db;
+}
+
+.social-icons{
+display:flex;
+gap:18px;
+margin-top:35px;
+}
+
+.social-icons a{
+width:55px;
+height:55px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#fff;
+color:#111827;
+font-size:22px;
+text-decoration:none;
 transition:.3s;
 }
 
-.service-card:hover h3{
-color:#c9a227;
+.social-icons a:hover{
+background:#c8a13a;
+color:#fff;
+transform:translateY(-5px);
 }
 
-.section-title h2::after{
-content:"";
-display:block;
-width:90px;
-height:4px;
-background:#c9a227;
-margin:18px auto 0;
-border-radius:50px;
-}
-/* ================= İLETİŞİM ================= */
+/* ===================================================
+   FORM
+=================================================== */
 
-.contact{
-    padding:120px 0;
-    background:#111827;
-    color:#fff;
+.contact-right{
+background:#fff;
+padding:45px;
+border-radius:25px;
+box-shadow:0 25px 60px rgba(0,0,0,.10);
 }
 
-.contact .section-title h2{
-    color:#fff;
+.contact-right form{
+display:flex;
+flex-direction:column;
+gap:18px;
 }
 
-.contact .section-title p{
-    color:#d1d5db;
+.contact-right input,
+.contact-right textarea{
+padding:18px 20px;
+border:1px solid #ddd;
+border-radius:14px;
+font-size:16px;
+outline:none;
+transition:.3s;
 }
 
-.contact-icons{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:25px;
-    margin:50px 0;
-    flex-wrap:wrap;
+.contact-right input:focus,
+.contact-right textarea:focus{
+border-color:#c8a13a;
+box-shadow:0 0 10px rgba(200,161,58,.20);
 }
 
-.contact-icons a{
-    width:70px;
-    height:70px;
-    border-radius:50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-size:30px;
-    color:#fff;
-    text-decoration:none;
-    transition:.35s;
-    box-shadow:0 15px 35px rgba(0,0,0,.25);
+.contact-right textarea{
+resize:vertical;
+min-height:170px;
 }
 
-.contact-icons a:nth-child(1){
-    background:#25D366;
+.contact-right button{
+background:#c8a13a;
+color:#fff;
+border:none;
+padding:18px;
+font-size:18px;
+font-weight:600;
+border-radius:14px;
+cursor:pointer;
+transition:.3s;
 }
 
-.contact-icons a:nth-child(2){
-    background:linear-gradient(45deg,#833AB4,#E1306C,#FCAF45);
+.contact-right button:hover{
+background:#111827;
+transform:translateY(-3px);
 }
 
-.contact-icons a:nth-child(3){
-    background:#229ED9;
-}
-
-.contact-icons a:nth-child(4){
-    background:#1877F2;
-}
-
-.contact-icons a:nth-child(5){
-    background:#444;
-}
-
-.contact-icons a:hover{
-    transform:translateY(-8px) scale(1.08);
-}
-
-.contact-info{
-    max-width:700px;
-    margin:auto;
-    text-align:center;
-}
-
-.contact-info h3{
-    font-size:34px;
-    margin-bottom:30px;
-}
-
-.contact-info p{
-    font-size:18px;
-    color:#d1d5db;
-    margin:18px 0;
-    line-height:1.8;
-}
-
-/* ================= FOOTER ================= */
+/* ===================================================
+   FOOTER
+=================================================== */
 
 footer{
-    background:#0b1220;
-    color:#fff;
-    text-align:center;
-    padding:35px 20px;
+background:#0b1220;
+color:#fff;
+text-align:center;
+padding:35px 20px;
 }
 
 footer p{
-    margin:8px 0;
-    color:#9ca3af;
+margin:8px 0;
+color:#b7bcc7;
 }
 
-/* ================= WHATSAPP ================= */
+/* ===================================================
+   WHATSAPP
+=================================================== */
 
 .whatsapp-float{
-    position:fixed;
-    right:25px;
-    bottom:25px;
-    width:70px;
-    height:70px;
-    border-radius:50%;
-    background:#25D366;
-    color:#fff;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-size:34px;
-    text-decoration:none;
-    box-shadow:0 15px 40px rgba(0,0,0,.30);
-    z-index:9999;
-    transition:.35s;
+position:fixed;
+right:25px;
+bottom:25px;
+width:70px;
+height:70px;
+background:#25D366;
+color:#fff;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:34px;
+text-decoration:none;
+box-shadow:0 20px 45px rgba(0,0,0,.25);
+z-index:999;
+transition:.3s;
 }
 
 .whatsapp-float:hover{
-    transform:scale(1.12);
+transform:scale(1.1);
 }
 
-/* ================= MOBİL ================= */
+/* ===================================================
+   RESPONSIVE
+=================================================== */
 
 @media(max-width:992px){
 
-.hero-grid{
+.hero-grid,
+.contact-wrapper{
 grid-template-columns:1fr;
-text-align:center;
-}
-
-.hero-left h1{
-font-size:48px;
-}
-
-.stats{
-grid-template-columns:repeat(2,1fr);
 }
 
 .service-grid{
+grid-template-columns:1fr;
+}
+
+.stats{
 grid-template-columns:1fr;
 }
 
@@ -466,38 +567,53 @@ display:none;
 display:none;
 }
 
-header .container{
-height:80px;
+.hero{
+padding-top:140px;
+text-align:center;
 }
 
-.hero{
-padding-top:120px;
+.hero-left h1{
+font-size:48px;
+}
+
+.section-title h2{
+font-size:38px;
+}
+
+.contact-left,
+.contact-right{
+padding:30px;
 }
 
 }
 
 @media(max-width:600px){
 
-.stats{
-grid-template-columns:1fr;
-}
-
 .hero-left h1{
 font-size:38px;
+}
+
+.hero-left h2{
+font-size:24px;
 }
 
 .hero-left p{
 font-size:16px;
 }
 
-.section-title h2{
-font-size:34px;
+.btn-primary,
+.btn-secondary{
+width:100%;
+text-align:center;
 }
 
-.contact-icons a{
-width:60px;
-height:60px;
-font-size:26px;
+.social-icons{
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.contact-item{
+align-items:flex-start;
 }
 
 .whatsapp-float{
@@ -508,77 +624,4 @@ right:18px;
 bottom:18px;
 }
 
-}
-/* ===========================
-   İLETİŞİM FORMU
-=========================== */
-
-.contact-form{
-    background:#f8f9fb;
-    padding:100px 20px;
-}
-
-.contact-form .container{
-    max-width:850px;
-    margin:auto;
-}
-
-.contact-form h2{
-    text-align:center;
-    font-size:42px;
-    margin-bottom:15px;
-    color:#222;
-}
-
-.contact-form p{
-    text-align:center;
-    color:#666;
-    margin-bottom:45px;
-    line-height:1.8;
-}
-
-.contact-form form{
-    display:flex;
-    flex-direction:column;
-    gap:20px;
-}
-
-.contact-form input,
-.contact-form textarea{
-    width:100%;
-    padding:18px 22px;
-    border:1px solid #ddd;
-    border-radius:14px;
-    font-size:17px;
-    outline:none;
-    transition:.3s;
-    background:#fff;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus{
-    border-color:#c79a2b;
-    box-shadow:0 0 10px rgba(199,154,43,.25);
-}
-
-.contact-form textarea{
-    resize:vertical;
-    min-height:180px;
-}
-
-.contact-form button{
-    background:#c79a2b;
-    color:#fff;
-    border:none;
-    padding:18px;
-    border-radius:14px;
-    font-size:18px;
-    font-weight:bold;
-    cursor:pointer;
-    transition:.3s;
-}
-
-.contact-form button:hover{
-    background:#ad8320;
-    transform:translateY(-2px);
 }
