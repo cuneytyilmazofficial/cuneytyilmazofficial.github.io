@@ -119,3 +119,11 @@ img{
 .button:hover{
     transform:scale(1.08);
 }
+.footer{
+    margin-top:40px;
+    padding:20px;
+    text-align:center;
+    color:#bdbdbd;
+    font-size:14px;
+    border-top:1px solid rgba(255,255,255,0.15);
+}
