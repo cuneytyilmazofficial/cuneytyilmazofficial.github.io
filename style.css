@@ -216,3 +216,29 @@ display:none;
 .instagram{
     background: linear-gradient(45deg,#833AB4,#FD1D1D,#FCAF45);
 }
+#contact{
+    background:#111;
+    color:#fff;
+    text-align:center;
+    padding:50px 20px;
+}
+
+#contact h2{
+    margin-bottom:25px;
+    font-size:32px;
+}
+
+#contact p{
+    margin:12px 0;
+    font-size:18px;
+}
+
+#contact a{
+    color:#25D366;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+#contact a:hover{
+    text-decoration:underline;
+}
