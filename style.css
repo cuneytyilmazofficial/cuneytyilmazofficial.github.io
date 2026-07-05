@@ -104,3 +104,16 @@ img{
     width:180px;
     margin:20px auto;
 }
+.button{
+    display:inline-block;
+    margin:10px;
+    padding:12px 24px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.button:hover{
+    transform:scale(1.08);
+}
